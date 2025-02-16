@@ -1,0 +1,128 @@
+@charset "utf-5";
+
+body{
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+}
+
+#player{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(122, 222, 250, 0.917);
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  transition: left 100ms;
+}
+
+.bullet{
+  width: 5px;
+  height: 10px;
+  background-color: yellow;
+  position: absolute;
+}
+
+.enemy {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  position: absolute;
+
+}
+
+#game-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+
+
+}
+
+.scorefield {
+  border: white;
+}
+
+#scorefield {
+  margin: 0;
+  color: white;
+  border: solid white 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+
+}
+
+.score {
+  margin: 0;
+  padding: 6px;
+}
+
+.addscore{
+  margin: 0;
+  text-align: center;
+  padding: 2px;
+  font-size: 32px
+}
+
+#relord{
+  display: flex;
+  border: solid white 2px;
+  color: white;
+  width: 146px;
+  position: absolute;
+  top: 120px;
+  left: 4px;
+  border-radius: 4px;
+  text-align: center;
+
+}
+
+.re{
+ width: 12px;
+ height: 40px;
+ border: solid rgb(73, 73, 73) 2px;
+ margin: 4px;
+ background-color: yellow;
+}
+
+.re0 {
+ color: white;
+ position: absolute;
+  top: 120px;
+  left: 4px;
+
+}
+
+.timer{
+  color: white;
+  position: absolute;
+  bottom:4px;
+  right: 12px;
+}
+
+#controls {
+  position: fixed;
+  bottom: 10px;
+  left: 35% ;
+  display: flex;
+  gap: 10px;
+}
+
+#controls button {
+  transform: translateX(-50%);
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.787);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
