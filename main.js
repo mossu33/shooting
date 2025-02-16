@@ -66,6 +66,7 @@ document.addEventListener('keydown' , (event) =>{
       index ++;
 
     if(index === re.length){
+      shootBullet();
 
     const re0 = document.createElement('div');
     re0.innerHTML = 'RELOAD...';
@@ -281,13 +282,15 @@ shootBtn.addEventListener('touchstart', () => {
     index ++;
 
   if(index === re.length){
-
+    shootBullet();
   const re0 = document.createElement('div');
   re0.innerHTML = 'RELOAD...';
   re0.classList.add('re0');
   re0.style.fontSize = '24'+'px';
   document.body.appendChild(re0);
+
   // re[index].remove();
+
 
 timeSet = 5
 time = 5 * 1000;
